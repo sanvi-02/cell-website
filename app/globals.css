@@ -3,3 +3,12 @@
 html{
   scroll-behavior: smooth;
 }
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/Manrope.ttf') format('truetype');
+}
+
+@theme{
+  --font-manrope:'Manrope',sans-serif;
+}
