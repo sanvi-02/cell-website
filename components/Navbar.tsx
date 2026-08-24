@@ -19,11 +19,12 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100/80 transition-all">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+    <header className="sticky top-0 z-50 pt-4 sm:pt-5 pb-2 px-4 sm:px-6 lg:px-8 w-full max-w-7xl mx-auto">
+      {/* Floating Pill Container */}
+      <div className="bg-[#F6F7FA]/95 backdrop-blur-md rounded-2xl md:rounded-[22px] border border-slate-200/70 shadow-xs px-5 sm:px-8 py-3 sm:py-3.5 flex items-center justify-between transition-all">
         {/* Brand Logo */}
-        <Link href="/" className="flex items-center gap-3 group">
-          <div className="relative w-36 h-10 flex items-center">
+        <Link href="/" className="flex items-center gap-3 group shrink-0">
+          <div className="relative w-32 sm:w-36 h-9 flex items-center">
             <Image
               src="/logo.png"
               alt="E-Cell IIT Roorkee"
@@ -36,23 +37,20 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Navigation Links */}
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-8 lg:gap-10">
           {NAV_LINKS.map((link) => {
             const isActive = pathname === link.href;
             return (
               <Link
                 key={link.name}
                 href={link.href}
-                className={`text-sm font-medium transition-colors hover:text-blue-600 relative py-1 ${
+                className={`text-sm font-medium transition-colors hover:text-[#001766] py-1 ${
                   isActive
-                    ? "text-blue-600 font-semibold"
-                    : "text-slate-700 hover:text-slate-900"
+                    ? "text-[#001766] font-semibold"
+                    : "text-[#233876]/85 hover:text-[#001766]"
                 }`}
               >
                 {link.name}
-                {isActive && (
-                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-600 rounded-full" />
-                )}
               </Link>
             );
           })}
@@ -62,16 +60,16 @@ export default function Navbar() {
         <button
           type="button"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden p-2 rounded-lg text-slate-700 hover:bg-slate-100 transition-colors"
+          className="md:hidden p-2 rounded-xl text-[#233876] hover:bg-slate-200/50 transition-colors"
           aria-label="Toggle navigation menu"
         >
           {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
-      {/* Mobile Drawer */}
+      {/* Mobile Menu Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
+        <div className="md:hidden mt-2 bg-[#F6F7FA] rounded-2xl border border-slate-200/80 p-4 space-y-2 shadow-lg">
           {NAV_LINKS.map((link) => {
             const isActive = pathname === link.href;
             return (
@@ -79,10 +77,10 @@ export default function Navbar() {
                 key={link.name}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className={`block px-3 py-2 rounded-lg text-base font-medium transition-colors ${
+                className={`block px-4 py-2.5 rounded-xl text-base font-medium transition-colors ${
                   isActive
-                    ? "bg-blue-50 text-blue-600 font-semibold"
-                    : "text-slate-700 hover:bg-slate-50 hover:text-slate-900"
+                    ? "bg-[#001766] text-white font-semibold"
+                    : "text-[#233876] hover:bg-slate-200/60"
                 }`}
               >
                 {link.name}
