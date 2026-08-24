@@ -4,6 +4,7 @@ import Intro from "@/components/Intro";
 import Features from "@/components/Feature";
 import Initiatives from "@/components/Initiatives";
 import PastSpeakers from "@/components/Spakers";
+import Outro from "@/components/outro";
 
 export default function Home(){
   return(
@@ -14,6 +15,7 @@ export default function Home(){
         <Features/>
         <Initiatives />
         <PastSpeakers/>
+        <Outro />
     </main>
   )
 }
