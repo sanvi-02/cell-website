@@ -19,18 +19,18 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 pt-4 sm:pt-5 pb-2 px-4 sm:px-6 lg:px-8 w-full max-w-7xl mx-auto">
+    <header className="sticky top-0 z-50 pt-4 sm:pt-6 pb-2 px-4 sm:px-6 lg:px-8 w-full max-w-7xl mx-auto">
       {/* Floating Pill Container */}
-      <div className="bg-[#F6F7FA]/95 backdrop-blur-md rounded-2xl md:rounded-[22px] border border-slate-200/70 shadow-xs px-5 sm:px-8 py-3 sm:py-3.5 flex items-center justify-between transition-all">
+      <div className="bg-[#F8F9FA]/95 backdrop-blur-md rounded-2xl md:rounded-[24px] border border-slate-200/60 shadow-xs px-6 sm:px-8 py-2.5 sm:py-3 flex items-center justify-between transition-all">
         {/* Brand Logo */}
         <Link href="/" className="flex items-center gap-3 group shrink-0">
-          <div className="relative w-32 sm:w-36 h-9 flex items-center">
+          <div className="relative flex items-center h-8 sm:h-9">
             <Image
               src="/logo.png"
               alt="E-Cell IIT Roorkee"
-              width={140}
-              height={40}
-              className="object-contain"
+              width={160}
+              height={45}
+              className="object-contain w-auto h-7 sm:h-8"
               priority
             />
           </div>
@@ -69,7 +69,7 @@ export default function Navbar() {
 
       {/* Mobile Menu Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden mt-2 bg-[#F6F7FA] rounded-2xl border border-slate-200/80 p-4 space-y-2 shadow-lg">
+        <div className="md:hidden mt-2 bg-[#F8F9FA] rounded-2xl border border-slate-200/80 p-4 space-y-2 shadow-lg">
           {NAV_LINKS.map((link) => {
             const isActive = pathname === link.href;
             return (
