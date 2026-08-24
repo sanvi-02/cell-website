@@ -5,6 +5,7 @@ import Features from "@/components/Feature";
 import Initiatives from "@/components/Initiatives";
 import PastSpeakers from "@/components/Spakers";
 import Outro from "@/components/outro";
+import Footer from "@/components/Footer";
 
 export default function Home(){
   return(
@@ -16,6 +17,7 @@ export default function Home(){
         <Initiatives />
         <PastSpeakers/>
         <Outro />
+        <Footer />
     </main>
   )
 }
