@@ -1,4 +1,4 @@
-import { Card } from "./stackCard";
+import { Card } from "./StackCard";
 
 export default function Placeholder({ card, featured = false }: { card: Card; featured?: boolean }) {
     return (
