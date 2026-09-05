@@ -47,6 +47,7 @@ export default function Footer() {
                         <div className="mt-6 flex flex-col gap-4">
                             <Link href="/" className="font-manrope text-[16px]/[24px] text-white/90 hover:text-white transition-colors">Home</Link>
                             <Link href="/initiatives" className="font-manrope text-[16px]/[24px] text-white/90 hover:text-white transition-colors">Initiatives</Link>
+                            <Link href="/verticals" className="font-manrope text-[16px]/[24px] text-white/90 hover:text-white transition-colors">Verticals</Link>
                             <Link href="/#About" className="font-manrope text-[16px]/[24px] text-white/90 hover:text-white transition-colors">About Us</Link>
                             <Link href="/#Team" className="font-manrope text-[16px]/[24px] text-white/90 hover:text-white transition-colors">Team</Link>
                             <Link href="/#Contact" className="font-manrope text-[16px]/[24px] text-white/90 hover:text-white transition-colors">Contact Us</Link>
