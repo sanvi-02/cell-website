@@ -1,8 +1,8 @@
 "use client";
 
+import Navbar from "@/components/Navbar";
 import VerticalsHero from "@/components/VerticalsHero";
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
+import Footer from "@/components/Footer";
 
 export default function VerticalsPage() {
     return (
