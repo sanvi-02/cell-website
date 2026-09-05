@@ -22,24 +22,24 @@ const speakers = [
         image: "/a-velumani.png",
     },
     {
-        name: "SIDDHARTH MAHESHWARI",
-        role: "Founder, Newton School",
-        image: "/siddharth-maheshwari.png",
+        name: "GAURAV TANEJA",
+        role: "Founder, Beast Life",
+        image: "/gaurav-taneja.JPG",
     },
     {
-        name: "AMAN GUPTA",
-        role: "CMO, boAt",
-        image: "/aman-gupta.png",
+        name: "GANESH PRASAD",
+        role: "COO, Think School",
+        image: "/ganesh-prasad.jpeg",
     },
     {
-        name: "ASHISH ARORA",
-        role: "Founder, Physics Galaxy",
-        image: "/ashish-arora.png",
+        name: "RAJ SHAMANI",
+        role: "Indian, PODCASTER",
+        image: "/raj-shamani.webp",
     },
     {
-        name: "A. VELUMANI",
-        role: "Creator, Thyrocare",
-        image: "/a-velumani.png",
+        name: "ANKUR WARIKOO",
+        role: "Entreprenuer, FOUNDER",
+        image: "/ankur-warikoo.webp",
     },
 ];
 
