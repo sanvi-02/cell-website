@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
     return (
         <footer id="Footer" className="w-full bg-[linear-gradient(90deg,#002575_0%,#011A7F_61%,#000209_100%)] text-white px-8 md:px-16 lg:px-[7%] pt-12 md:pt-14 pb-6">
@@ -25,7 +27,7 @@ export default function Footer() {
                         </p>
 
                         {/* Address */}
-                        <div className="mt-12">
+                        <div className="mt-8">
                             <p className="font-manrope font-[500] text-[16px]/[24px] uppercase">Address</p>
 
                             <p className="mt-4 font-manrope font-[400] text-[15px] leading-[18px] text-white/90">
@@ -43,11 +45,11 @@ export default function Footer() {
                         <h3 className="font-manrope font-[500] text-[16px]/[24px] uppercase">Explore</h3>
 
                         <div className="mt-6 flex flex-col gap-4">
-                            <a href="#Home" className="font-manrope text-[16px]/[24px] text-white/90 hover:text-white transition-colors">Home</a>
-                            <a href="#Initiatives" className="font-manrope text-[16px]/[24px] text-white/90 hover:text-white transition-colors">Initiatives</a>
-                            <a href="#About" className="font-manrope text-[16px]/[24px] text-white/90 hover:text-white transition-colors">About Us</a>
-                            <a href="#Team" className="font-manrope text-[16px]/[24px] text-white/90 hover:text-white transition-colors">Team</a>
-                            <a href="#Contact" className="font-manrope text-[16px]/[24px] text-white/90 hover:text-white transition-colors">Contact Us</a>
+                            <Link href="/" className="font-manrope text-[16px]/[24px] text-white/90 hover:text-white transition-colors">Home</Link>
+                            <Link href="/initiatives" className="font-manrope text-[16px]/[24px] text-white/90 hover:text-white transition-colors">Initiatives</Link>
+                            <Link href="/#About" className="font-manrope text-[16px]/[24px] text-white/90 hover:text-white transition-colors">About Us</Link>
+                            <Link href="/#Team" className="font-manrope text-[16px]/[24px] text-white/90 hover:text-white transition-colors">Team</Link>
+                            <Link href="/#Contact" className="font-manrope text-[16px]/[24px] text-white/90 hover:text-white transition-colors">Contact Us</Link>
                         </div>
                     </div>
 

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const initiatives = [
     {
         title: "E-Summit",
@@ -9,27 +11,27 @@ const initiatives = [
     },
     {
         title: "E-School",
-        category: "CERTIFICATION",
+        category: "STARTUP ACCELERATOR",
         description:
-            "A structured certification program taking you from novice to aspiring entrepreneur through rigorous modules and mentorship.",
+            "A structured curriculum and mentorship track taking early-stage student founders from problem statement to validated MVP.",
         image: "/e-school.png",
         number: "02",
     },
     {
-        title: "E-School",
-        category: "CERTIFICATION",
+        title: "Pinnacle",
+        category: "INNOVATION SPRINT",
         description:
-            "A structured certification program taking you from novice to aspiring entrepreneur through rigorous modules and mentorship.",
+            "The multi-stage national case-study and startup competition pitting top tier campus talent against real-world problem sets.",
         image: "/e-school.png",
-        number: "02",
+        number: "03",
     },
     {
-        title: "E-Summit",
-        category: "FLAGSHIP FESTIVAL",
+        title: "National Social Summit",
+        category: "IMPACT CONCLAVE",
         description:
-            "The flagship entrepreneurial festival of IIT Roorkee. Three days of high-impact networking, pitching, and learning alongside founders, VCs, and innovators.",
+            "Centering ventures that solve for the next billion. Exploring deep technology and grassroots solutions across education, healthcare, and sustainability.",
         image: "/e-summit.png",
-        number: "01",
+        number: "04",
     },
 ];
 
@@ -53,9 +55,9 @@ export default function Initiatives() {
                     </div>
 
                     {/* View all button */}
-                    <button className="hidden md:block mt-1 px-[24px] py-[12px] rounded-[32px] border border-[#1111111A] font-manrope text-[16px]/[20px] text-[#474747] hover:bg-[#F7F7F7] transition-colors">
+                    <Link href="/initiatives" className="hidden md:block mt-1 px-[24px] py-[12px] rounded-[32px] border border-[#1111111A] font-manrope text-[16px]/[20px] text-[#474747] hover:bg-[#F7F7F7] transition-colors">
                         View All Initiatives
-                    </button>
+                    </Link>
                 </div>
 
                 {/* Initiative Grid */}
@@ -89,9 +91,9 @@ export default function Initiatives() {
                 </div>
 
                 {/* Mobile View All */}
-                <button className="md:hidden mt-8 px-5 py-2.5 rounded-full border border-[#E5E5E5] font-manrope text-[11px] text-[#555]">
+                <Link href="/initiatives" className="md:hidden mt-8 inline-block px-5 py-2.5 rounded-full border border-[#E5E5E5] font-manrope text-[11px] text-[#555] text-center">
                     View All Initiatives
-                </button>
+                </Link>
 
             </div>
         </section>
