@@ -1,5 +1,23 @@
-import AboutPage from "./about/page";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import Intro from "@/components/Intro";
+import Features from "@/components/Feature";
+import Initiatives from "@/components/Initiatives";
+import PastSpeakers from "@/components/Spakers";
+import Outro from "@/components/outro";
+import Footer from "@/components/Footer";
 
 export default function Home() {
-  return <AboutPage />;
+  return (
+    <main>
+      <Navbar />
+      <Hero />
+      <Intro />
+      <Features />
+      <Initiatives />
+      <PastSpeakers />
+      <Outro />
+      <Footer />
+    </main>
+  );
 }
