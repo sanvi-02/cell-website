@@ -49,7 +49,7 @@ export default function Footer() {
                             <Link href="/initiatives" className="font-manrope text-[16px]/[24px] text-white/90 hover:text-white transition-colors">Initiatives</Link>
                             <Link href="/verticals" className="font-manrope text-[16px]/[24px] text-white/90 hover:text-white transition-colors">Verticals</Link>
                             <Link href="/#About" className="font-manrope text-[16px]/[24px] text-white/90 hover:text-white transition-colors">About Us</Link>
-                            <Link href="/#Team" className="font-manrope text-[16px]/[24px] text-white/90 hover:text-white transition-colors">Team</Link>
+                            <Link href="/team" className="font-manrope text-[16px]/[24px] text-white/90 hover:text-white transition-colors">Team</Link>
                             <Link href="/#Contact" className="font-manrope text-[16px]/[24px] text-white/90 hover:text-white transition-colors">Contact Us</Link>
                         </div>
                     </div>
