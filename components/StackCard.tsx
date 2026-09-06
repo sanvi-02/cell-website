@@ -10,11 +10,11 @@ export type Card = {
 
 export const cards: Card[] = [
     { label: "Zero to one", title: "Zero to One", text: "Building solutions and startups around real problems within and beyond the IIT Roorkee campus  from the first sketch to the first paying customer.", type: "image", src: "/verticals/021.jpeg" },
-    { label: "Startup Launchpad", title: "Startup Launchpad", text: "Working with external startups to give E-Cell members hands-on exposure to real-world startup execution.", type: "video", src: "/verticals/launchpad.mp4" },
+    { label: "Startup Launchpad", title: "Startup Launchpad", text: "Working with external startups to give E-Cell members hands-on exposure to real-world startup execution.", type: "image", src: "/verticals/launchpad.jpeg" },
     { label: "Events", title: "Events", text: "Creating entrepreneurship-focused experiences through E-Cell events and collaborations with clubs, companies and organizations.", type: "image", src: "/verticals/eventsnew.jpeg" },
     { label: "Marketing", title: "Marketing & Outreach", text: "Creating engaging and educational content around entrepreneurship and E-Cell while expanding its reach.", type: "image", src: "/verticals/mno.jpeg" },
-    { label: "Design", title: "Design", text: "Building E-Cell's visual identity and creating design solutions across itsecosystem.", type: "video", src: "/verticals/design.mp4" },
-    { label: "Tech", title: "Tech", text: "Building websites, digital products and technical solutions for E-Cell and its verticals.", type: "video", src: "/verticals/tech.mp4" },
+    { label: "Design", title: "Design", text: "Building E-Cell's visual identity and creating design solutions across itsecosystem.", type: "image", src: "/verticals/design.jpeg" },
+    { label: "Tech", title: "Tech", text: "Building websites, digital products and technical solutions for E-Cell and its verticals.", type: "image", src: "/verticals/tech.jpeg" },
 ];
 
 export default function StackCard({
