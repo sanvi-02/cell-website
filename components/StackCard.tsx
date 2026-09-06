@@ -9,10 +9,10 @@ export type Card = {
 };
 
 export const cards: Card[] = [
-    { label: "Zero to one", title: "Zero to One", text: "Building solutions and startups around real problems within and beyond the IIT Roorkee campus  from the first sketch to the first paying customer.", type: "image", src: "/verticals/zero.jpg" },
+    { label: "Zero to one", title: "Zero to One", text: "Building solutions and startups around real problems within and beyond the IIT Roorkee campus  from the first sketch to the first paying customer.", type: "image", src: "/verticals/021.jpeg" },
     { label: "Startup Launchpad", title: "Startup Launchpad", text: "Working with external startups to give E-Cell members hands-on exposure to real-world startup execution.", type: "video", src: "/verticals/launchpad.mp4" },
-    { label: "Events", title: "Events", text: "Creating entrepreneurship-focused experiences through E-Cell events and collaborations with clubs, companies and organizations.", type: "image", src: "/verticals/events.jpg" },
-    { label: "Marketing", title: "Marketing & Outreach", text: "Creating engaging and educational content around entrepreneurship and E-Cell while expanding its reach.", type: "video", src: "/verticals/market.mp4" },
+    { label: "Events", title: "Events", text: "Creating entrepreneurship-focused experiences through E-Cell events and collaborations with clubs, companies and organizations.", type: "image", src: "/verticals/eventsnew.jpeg" },
+    { label: "Marketing", title: "Marketing & Outreach", text: "Creating engaging and educational content around entrepreneurship and E-Cell while expanding its reach.", type: "image", src: "/verticals/mno.jpeg" },
     { label: "Design", title: "Design", text: "Building E-Cell's visual identity and creating design solutions across itsecosystem.", type: "video", src: "/verticals/design.mp4" },
     { label: "Tech", title: "Tech", text: "Building websites, digital products and technical solutions for E-Cell and its verticals.", type: "video", src: "/verticals/tech.mp4" },
 ];
@@ -21,30 +21,56 @@ export default function StackCard({
     card,
     position,
     isLeaving,
+    isEntering,
+    enterPhase,
     z,
     onClick,
 }: {
     card: Card;
     position: number;
     isLeaving: boolean;
+    isEntering?: boolean;
+    enterPhase?: "jump" | "settle" | null;
     z: number;
     onClick?: () => void;
 }) {
     const clamped = Math.min(position, 5);
-    const isFront = position === 0 && !isLeaving;
-    const translateY = isLeaving ? 1000 : position === 0 ? 0 : -clamped * 36;
-    const scale = isLeaving ? 1 : position === 0 ? 1 : 1 - clamped * 0.07;
-    const opacity = isLeaving ? 1 : clamped >= 5 ? 0 : 1;
+    const isJumping = !!isEntering && enterPhase === "jump";
+    const isFront = position === 0 && !isLeaving && !isJumping;
+
+    let translateY: number;
+    let scale: number;
+    let opacity: number;
+    let noTransition = false;
+
+    if (isLeaving) {
+        translateY = 1000;
+        scale = 1;
+        opacity = 1;
+    } else if (isJumping) {
+        translateY = 1000;
+        scale = 1;
+        opacity = 1;
+        noTransition = true;
+    } else if (position === 0) {
+        translateY = 0;
+        scale = 1;
+        opacity = 1;
+    } else {
+        translateY = -clamped * 36;
+        scale = 1 - clamped * 0.07;
+        opacity = clamped >= 5 ? 0 : 1;
+    }
 
     return (
         <div
-            onClick={!isFront && !isLeaving ? onClick : undefined}
+            onClick={!isFront && !isLeaving && !isJumping ? onClick : undefined}
             style={{
                 zIndex: z,
                 transform: `translateY(${translateY}px) scale(${scale})`,
                 opacity,
             }}
-            className={`absolute inset-x-0 top-0 mx-auto flex w-[92%] flex-col rounded-[14.77px] border border-white bg-white text-left shadow-[0_3.69px_22.25px_rgba(0,0,0,.07)] transition-all duration-500 ease-in-out ${!isFront && !isLeaving ? "cursor-pointer" : ""}`}
+            className={`absolute inset-x-0 top-0 mx-auto flex w-[92%] flex-col rounded-[14.77px] border border-white bg-white text-left shadow-[0_3.69px_22.25px_rgba(0,0,0,.07)] ${noTransition ? "" : "transition-all duration-500 ease-in-out"} ${!isFront && !isLeaving && !isJumping ? "cursor-pointer" : ""}`}
         >
             <div
                 className="flex flex-col"
@@ -58,7 +84,7 @@ export default function StackCard({
             >
                 <Placeholder card={card} featured />
                 <div
-                    className={`overflow-hidden`}
+                    className="overflow-hidden"
                     style={{ paddingTop: isFront ? "11.08px" : 0 }}
                 >
                     <h2 className="font-serif text-[clamp(21px,2.2vw,33.23px)] font-normal tracking-tight text-[#474747]">
