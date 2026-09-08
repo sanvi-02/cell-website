@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { TeamMember } from "@/data/teamData";
-import { XIcon, LinkedInIcon, MailIcon } from "./SocialIcons";
+import { LinkedInIcon, MailIcon } from "./SocialIcons";
 
 interface TeamCardProps {
   member: TeamMember;
@@ -53,17 +53,6 @@ export default function TeamCard({ member }: TeamCardProps) {
 
           {/* Social Links */}
           <div className="flex items-center justify-center gap-3">
-            {member.socials.twitter && (
-              <a
-                href={member.socials.twitter}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`${member.name}'s Twitter / X`}
-                className="w-11 h-11 rounded-xl bg-white/10 border border-white/20 hover:bg-white/25 hover:border-white/40 flex items-center justify-center text-white transition-all transform hover:scale-105"
-              >
-                <XIcon className="w-5 h-5 fill-current" />
-              </a>
-            )}
 
             {member.socials.linkedin && (
               <a
@@ -79,7 +68,9 @@ export default function TeamCard({ member }: TeamCardProps) {
 
             {member.socials.email && (
               <a
-                href={member.socials.email}
+                href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(member.socials.email.replace(/^mailto:/i, "").trim())}`}
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label={`Email ${member.name}`}
                 className="w-11 h-11 rounded-xl bg-white/10 border border-white/20 hover:bg-white/25 hover:border-white/40 flex items-center justify-center text-white transition-all transform hover:scale-105"
               >
