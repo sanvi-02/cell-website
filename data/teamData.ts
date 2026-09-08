@@ -212,11 +212,11 @@ export const TEAM_MEMBERS: TeamMember[] = [
   {
     id: "18",
     name: "Krishna Verma",
-    designation: "https://www.linkedin.com/in/krishna-verma-b354a4346/",
+    designation: "Head of Design",
     vertical: "Design & Tech",
     image: "/team/vrishnak.png",
     socials: {
-      linkedin: "https://linkedin.com",
+      linkedin: "https://www.linkedin.com/in/krishna-verma-b354a4346/",
       email: "mailto:krishna_v@ch.iitr.ac.in",
     },
   },
