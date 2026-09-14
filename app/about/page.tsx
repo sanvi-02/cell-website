@@ -1,6 +1,6 @@
 import OurVision from "./OurVision";
-import Header from "../components/Header";
 import AboutHero from "./AboutHero";
+
 import OurImpact from "./OurImpact";
 import OurHistory from "./OurHistory";
 import BuiltHere from "./BuiltHere";
