@@ -85,7 +85,7 @@ export default function PastSpeakers() {
                             Past Speakers
                         </p>
 
-                        <h2 className="mt-5 font-manrope font-[600] text-[48px]/[56px] md:text-[46px] leading-[1.05] tracking-[-1px] text-[#011A7F] max-w-[600px]">
+                        <h2 className="mt-5 font-manrope font-[600] text-[30px]/[34px] sm:text-[36px]/[40px] md:text-[42px]/[48px] lg:text-[48px]/[56px] leading-[1.05] tracking-[-1px] text-[#011A7F] max-w-[600px]">
                             Learn from the visionaries
                             <br />
                             shaping tomorrow.

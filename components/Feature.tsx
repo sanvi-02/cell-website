@@ -25,11 +25,11 @@ export default function Features() {
             id="Features"
             className="w-full bg-white px-8 md:px-16 lg:px-[7%] py-16 md:py-20 flex justify-center"
         >
-            <div className="relative w-full max-w-86/100 grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-10 lg:gap-16">
+            <div className="relative w-full max-w-86/100 grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
                 {features.map((feature) => (
                     <div
                         key={feature.title}
-                        className="flex flex-col items-start"
+                        className="flex flex-col"
                     >
                         {/* Icon */}
                         <div
@@ -65,7 +65,6 @@ export default function Features() {
                         <p
                             className="
                                 mt-3
-                                max-w-[330px]
                                 font-manrope
                                 font-[400]
                                 text-[16px]/[26px]

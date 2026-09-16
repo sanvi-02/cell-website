@@ -26,25 +26,25 @@ export default function Intro() {
 
     return (
         <section id="Intro" className="bg-white py-6 px-4 md:px-12 flex justify-center">
-            <div className="relative max-w-86/100 rounded-[20px] bg-white min-h-[650px] flex items-center px-8 md:px-16 overflow-hidden">
+            <div className="relative max-w-86/100 rounded-[20px] bg-white min-h-[420px] md:min-h-[480px] lg:min-h-[650px] flex items-start p-6 md:p-16 overflow-hidden">
 
                 {/* ================= LEFT CONTENT ================= */}
-                <div className="relative z-20 w-full lg:w-[48%] py-12">
+                <div className="relative z-20 w-full lg:w-[48%]">
 
                     <span className="tracking-[2px] uppercase font-manrope font-[500] text-[14px] md:text-[16px] text-[#08268F]">
                         ECELL
                     </span>
 
-                    <h1 className="mt-4 font-manrope font-[600] text-[48px]/[58px] md:text-[64px] lg:text-[72px] leading-[0.95] tracking-[-2px] text-[#011A7F]">
+                    <h1 className="mt-4 font-manrope font-[600] text-[36px]/[40px] sm:text-[48px]/[52px] md:text-[60px]/[60px] lg:text-[72px]/[68.4px] tracking-[-2px] text-[#011A7F]">
                         Fostering a culture of innovation since 2006.
                     </h1>
 
-                    <p className="mt-8 font-manrope font-[400] text-[20px]/[29.5px] md:text-[17px] leading-[1.5] text-[#4B4B4B] max-w-[520px]">
+                    <p className="mt-8 font-manrope font-[400] text-[15px]/[23px] md:text-[17px]/[26px] text-[#4B4B4B] max-w-[520px]">
                         E-Cell IIT Roorkee is more than a student group it's a launchpad for world-class startups. We connect ambitious students with industry leaders, investors, and alumni to turn breakthrough ideas into thriving businesses.
                     </p>
 
                     {/* Stats */}
-                    <div ref={statsRef} className="flex gap-16 mt-10">
+                    <div ref={statsRef} className="flex gap-8 sm:gap-12 md:gap-16 mt-10">
 
                         <div>
                             <h3 className="font-manrope font-[500] text-[30px]/[36px] md:text-[32px] text-[#333]">
