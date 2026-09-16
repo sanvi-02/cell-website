@@ -47,7 +47,7 @@ export default function Initiatives() {
                             Our Initiatives
                         </p>
 
-                        <h2 className="mt-4 font-manrope font-[600] text-[48px]/[56px] md:text-[46px] leading-[1.05] text-[#011A7F]">
+                        <h2 className="mt-4 font-manrope font-[600] text-[30px]/[34px] sm:text-[36px]/[40px] md:text-[42px]/[48px] lg:text-[48px]/[56px] leading-[1.05] text-[#011A7F]">
                             Initiatives that drive the
                             <br />
                             startup ecosystem.
@@ -55,45 +55,40 @@ export default function Initiatives() {
                     </div>
 
                     {/* View all button */}
-                    <Link href="/initiatives" className="hidden md:block mt-1 px-[24px] py-[12px] rounded-[32px] border border-[#1111111A] font-manrope text-[16px]/[20px] text-[#474747] hover:bg-[#F7F7F7] transition-colors">
+                    <Link href="/initiatives" className="hidden md:block mt-1 px-[24px] py-[12px] rounded-[32px] border border-[#1111111A] font-manrope text-[12px]/[16px] lg:text-[16px]/[20px] whitespace-nowrap text-[#474747] hover:bg-[#F7F7F7] transition-colors">
                         View All Initiatives
                     </Link>
                 </div>
 
                 {/* Initiative Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-4">
                     {initiatives.map((initiative, index) => (
-                        <div key={index} className={`relative group h-[420px] md:h-[280px] rounded-[32px] overflow-hidden ${index === 0 || index === 3 ? "md:col-span-7" : "md:col-span-5"}`} style={{ boxShadow: "0px 8px 10px -6px #0000001A, 0px 20px 25px -5px #0000001A" }}>
-                            
+                        <div key={index} className={`relative group h-[320px] lg:h-[280px] rounded-[32px] overflow-hidden ${index === 0 || index === 3 ? "lg:col-span-7" : "lg:col-span-5"}`} style={{ boxShadow: "0px 8px 10px -6px #0000001A, 0px 20px 25px -5px #0000001A" }}>
+
                             <img src={initiative.image} alt={initiative.title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
 
                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/5" />
 
-                            <span className="absolute right-4 bottom-[-28px] font-manrope font-[600] text-[150px] leading-none text-white/10 select-none">
+                            <span className="absolute right-4 bottom-[-18px] sm:bottom-[-24px] md:bottom-[-28px] font-manrope font-[600] text-[80px] sm:text-[110px] md:text-[150px] leading-none text-white/10 select-none">
                                 {initiative.number}
                             </span>
 
-                            <span className="absolute top-10 left-10 inline-flex px-[16px] py-[6px] rounded-full bg-[#00000033] backdrop-blur-sm border border-[#FFFFFF33] font-manrope text-[12px]/[16px] tracking-[0.5px] font-[500] text-white z-10">
+                            <span className="absolute top-5 left-5 md:top-10 md:left-10 inline-flex px-[12px] py-[5px] md:px-[16px] md:py-[6px] rounded-full bg-[#00000033] backdrop-blur-sm border border-[#FFFFFF33] font-manrope text-[11px]/[15px] md:text-[12px]/[16px] tracking-[0.5px] font-[500] text-white z-10">
                                 {initiative.category}
                             </span>
 
-                            <div className="absolute inset-x-0 bottom-0 p-7 md:p-10 text-white">
-                                <h3 className="font-manrope font-[600] text-[48px]/[48px] md:text-[32px] leading-none">
+                            <div className="absolute inset-x-0 bottom-0 p-5 sm:p-7 md:p-10 text-white">
+                                <h3 className="font-manrope font-[600] text-[26px]/[30px] sm:text-[30px]/[34px] md:text-[32px]/[36px] leading-none">
                                     {initiative.title}
                                 </h3>
 
-                                <p className="mt-4 max-w-[570px] font-manrope font-[400] text-[18px]/[29.25px] md:text-[13px] leading-[20px] text-white/80">
+                                <p className="mt-4 max-w-[570px] font-manrope font-[400] text-[13px]/[20px] sm:text-[14px]/[22px] md:text-[13px]/[20px] text-white/80">
                                     {initiative.description}
                                 </p>
                             </div>
                         </div>
                     ))}
                 </div>
-
-                {/* Mobile View All */}
-                <Link href="/initiatives" className="md:hidden mt-8 inline-block px-5 py-2.5 rounded-full border border-[#E5E5E5] font-manrope text-[11px] text-[#555] text-center">
-                    View All Initiatives
-                </Link>
 
             </div>
         </section>

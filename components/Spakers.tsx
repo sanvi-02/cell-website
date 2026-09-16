@@ -22,24 +22,24 @@ const speakers = [
         image: "/a-velumani.png",
     },
     {
-        name: "SIDDHARTH MAHESHWARI",
-        role: "Founder, Newton School",
-        image: "/siddharth-maheshwari.png",
+        name: "GAURAV TANEJA",
+        role: "Founder, Beast Life",
+        image: "/gaurav-taneja.JPG",
     },
     {
-        name: "AMAN GUPTA",
-        role: "CMO, boAt",
-        image: "/aman-gupta.png",
+        name: "GANESH PRASAD",
+        role: "COO, Think School",
+        image: "/ganesh-prasad.jpeg",
     },
     {
-        name: "ASHISH ARORA",
-        role: "Founder, Physics Galaxy",
-        image: "/ashish-arora.png",
+        name: "RAJ SHAMANI",
+        role: "Indian, PODCASTER",
+        image: "/raj-shamani.webp",
     },
     {
-        name: "A. VELUMANI",
-        role: "Creator, Thyrocare",
-        image: "/a-velumani.png",
+        name: "ANKUR WARIKOO",
+        role: "Entreprenuer, FOUNDER",
+        image: "/ankur-warikoo.webp",
     },
 ];
 
@@ -85,7 +85,7 @@ export default function PastSpeakers() {
                             Past Speakers
                         </p>
 
-                        <h2 className="mt-5 font-manrope font-[600] text-[48px]/[56px] md:text-[46px] leading-[1.05] tracking-[-1px] text-[#011A7F] max-w-[600px]">
+                        <h2 className="mt-5 font-manrope font-[600] text-[30px]/[34px] sm:text-[36px]/[40px] md:text-[42px]/[48px] lg:text-[48px]/[56px] leading-[1.05] tracking-[-1px] text-[#011A7F] max-w-[600px]">
                             Learn from the visionaries
                             <br />
                             shaping tomorrow.

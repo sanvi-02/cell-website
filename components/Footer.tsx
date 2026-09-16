@@ -11,7 +11,7 @@ export default function Footer() {
                     {/* Brand + Description */}
                     <div className="md:col-span-6 lg:col-span-6">
                         <div className="flex items-center gap-3">
-                            <img src="/Logo_footer.svg" />
+                            <img src="/Logo_footer.svg" alt="E-Cell Logo" className="h-[32px] sm:h-[36px] md:h-[44px] w-auto object-contain" />
                             {/* <div className="flex items-center justify-center w-9 h-9">
                                 <span className="text-[30px] leading-none font-bold text-[#00A8FF]">◆</span>
                             </div>
@@ -41,7 +41,7 @@ export default function Footer() {
                     </div>
 
                     {/* Explore */}
-                    <div className="md:col-span-3 lg:col-span-3">
+                    <div className="hidden md:block md:col-span-3 lg:col-span-3">
                         <h3 className="font-manrope font-[500] text-[16px]/[24px] uppercase">Explore</h3>
 
                         <div className="mt-6 flex flex-col gap-4">
@@ -59,7 +59,7 @@ export default function Footer() {
                         <div>
                             <h3 className="font-manrope font-[500] text-[16px]/[24px] uppercase">Contacts</h3>
 
-                            <div className="mt-6 flex flex-col gap-4">
+                            <div className="mt-6 flex flex-row md:flex-col gap-4">
                                 <a href="mailto:ecell@iitr.ac.in" className="font-manrope text-[16px]/[24px] text-white/90 hover:text-white transition-colors">ecell@iitr.ac.in</a>
                                 <a href="tel:+917222996098" className="font-manrope text-[16px]/[24px] text-white/90 hover:text-white transition-colors">+91 7222996098</a>
                             </div>
@@ -67,11 +67,11 @@ export default function Footer() {
 
                         {/* Social Icons */}
                         <div className="mt-10 flex items-center gap-3 md:justify-end">
-                            <a href="#" aria-label="Facebook" className="w-[32px] h-auto rounded-full flex items-center justify-center text-[#061B80] font-bold text-[13px] hover:scale-105 transition-transform"><img src="/Facebook.svg"/></a>
-                            <a href="#" aria-label="Twitter" className="w-[32px] h-auto  rounded-full flex items-center justify-center text-[#061B80] font-bold text-[11px] hover:scale-105 transition-transform"><img src="/Twitter.svg"/></a>
-                            <a href="#" aria-label="Instagram" className="w-[32px] h-auto  rounded-ful flex items-center justify-center text-[#061B80] font-bold text-[11px] hover:scale-105 transition-transform"><img src="/Instagram.svg"/></a>
-                            <a href="#" aria-label="LinkedIn" className="w-[32px] h-auto rounded-full flex items-center justify-center text-[#061B80] font-bold text-[10px] hover:scale-105 transition-transform"><img src="/LinkedIN.svg"/></a>
-                            <a href="#" aria-label="YouTube" className="w-[32px] h-auto  rounded-full flex items-center justify-center text-[#061B80] font-bold text-[9px] hover:scale-105 transition-transform"><img src="/Youtube.svg"/></a>
+                            <a href="#" aria-label="Facebook" className="w-[32px] h-[32px] rounded-full flex items-center justify-center text-[#061B80] font-bold text-[13px] hover:scale-105 transition-transform"><img src="/Facebook.svg" alt="" className="w-full h-full object-contain"/></a>
+                            <a href="https://x.com/ecell_iitr" aria-label="Twitter" className="w-[32px] h-[32px] rounded-full flex items-center justify-center text-[#061B80] font-bold text-[11px] hover:scale-105 transition-transform"><img src="/Twitter.svg" alt="" className="w-full h-full object-contain"/></a>
+                            <a href="https://www.instagram.com/ecelliitr" aria-label="Instagram" className="w-[32px] h-[32px] rounded-full flex items-center justify-center text-[#061B80] font-bold text-[11px] hover:scale-105 transition-transform"><img src="/Instagram.svg" alt="" className="w-full h-full object-contain"/></a>
+                            <a href="https://www.linkedin.com/company/ecelliitr" aria-label="LinkedIn" className="w-[32px] h-[32px] rounded-full flex items-center justify-center text-[#061B80] font-bold text-[10px] hover:scale-105 transition-transform"><img src="/LinkedIN.svg" alt="" className="w-full h-full object-contain"/></a>
+                            <a href="https://www.youtube.com/@e-celliitroorkee6035" aria-label="YouTube" className="w-[32px] h-[32px] rounded-full flex items-center justify-center text-[#061B80] font-bold text-[9px] hover:scale-105 transition-transform"><img src="/Youtube.svg" alt="" className="w-full h-full object-contain"/></a>
                         </div>
                     </div>
                 </div>
