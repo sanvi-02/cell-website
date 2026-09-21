@@ -9,9 +9,9 @@ export default function Navbar() {
                 {/* Logo Container */}
                 <Link href="/" className="flex items-center">
                     <img 
-                        src="/logo_nav.svg" 
-                        alt="E-Cell Logo" 
-                        className="h-[43px] w-auto object-contain cursor-pointer" 
+                        src="/logo_nav.png" 
+                        alt="E-Cell IIT Roorkee Logo" 
+                        className="h-[45px] w-auto object-contain cursor-pointer" 
                     />
                 </Link>
                 

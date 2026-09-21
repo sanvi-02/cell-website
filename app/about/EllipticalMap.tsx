@@ -13,7 +13,7 @@ const INNER_B = 726.0176 / 2;
 const OUTER_A = FRAME_WIDTH / 2;
 const OUTER_B = FRAME_HEIGHT / 2;
 
-const INNER_LOGOS = ["comp1", "comp2", "comp3", "comp4", "comp5"];
+const INNER_LOGOS = ["comp2", "comp4", "comp5", "comp2", "comp4"];
 const OUTER_LOGOS = ["comp6", "comp7", "comp8"];
 
 const INNER_DURATION = 26;

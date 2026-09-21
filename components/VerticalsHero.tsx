@@ -30,11 +30,14 @@ export default function VerticalsHero() {
 
     useEffect(() => {
         if (pendingTarget === null || leavingIndex !== null) return;
-        if (order[0] === pendingTarget) {
-            setPendingTarget(null);
-        } else {
-            setLeavingIndex(order[0]);
-        }
+        const timer = setTimeout(() => {
+            if (order[0] === pendingTarget) {
+                setPendingTarget(null);
+            } else {
+                setLeavingIndex(order[0]);
+            }
+        }, 0);
+        return () => clearTimeout(timer);
     }, [order, leavingIndex, pendingTarget]);
 
     const displayOrder = leavingIndex !== null ? order.filter((i) => i !== leavingIndex) : order;
