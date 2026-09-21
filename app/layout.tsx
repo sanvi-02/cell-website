@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import { Plus_Jakarta_Sans, Space_Grotesk } from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  Poppins,
+  Manrope,
+  Plus_Jakarta_Sans,
+  Space_Grotesk,
+  Work_Sans,
+} from "next/font/google";
 import "./globals.css";
-import { Manrope } from "next/font/google";
-import { Work_Sans } from "next/font/google";
 
 const workSans = Work_Sans({
   variable: "--font-work-sans",
@@ -19,6 +24,7 @@ const geistSans = Geist({
 const manrope = Manrope({
   variable: "--font-manrope",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
 });
 
 const plusJakarta = Plus_Jakarta_Sans({
@@ -38,6 +44,12 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const poppins = Poppins({
+  variable: "--font-poppins",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+});
+
 export const metadata: Metadata = {
   title: "E-Cell IIT Roorkee",
   description: "Fostering entrepreneurship and innovation since 2006",
@@ -51,9 +63,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${manrope.variable} ${plusJakarta.variable} ${spaceGrotesk.variable} ${geistMono.variable} ${workSans.variable}  h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${manrope.variable} ${plusJakarta.variable} ${spaceGrotesk.variable} ${workSans.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
 }
+

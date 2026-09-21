@@ -46,17 +46,6 @@ export const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     id: "3",
-    name: "Rajarshi Verma",
-    designation: "Additional Secretary",
-    vertical: "Corporate Relations",
-    image: "/team/RAJARSHI VERMA.JPG",
-    socials: {
-      linkedin: "https://linkedin.com/in/rajarshi-verma",
-      email: "mailto:rajarshi_v@bt.iitr.ac.in",
-    },
-  },
-  {
-    id: "4",
     name: "Divyam Saini",
     designation: "Convenor of E-Summit'27",
     vertical: "Secretaries",
@@ -67,9 +56,9 @@ export const TEAM_MEMBERS: TeamMember[] = [
     },
   },
   {
-    id: "5",
+    id: "4",
     name: "Vivek Singh",
-    designation: "Co-convenor  of E-Summit'27",
+    designation: "Co-convenor",
     vertical: "Secretaries",
     image: "/team/VIVEK SINGH.webp",
     socials: {
@@ -78,9 +67,9 @@ export const TEAM_MEMBERS: TeamMember[] = [
     },
   },
   {
-    id: "6",
+    id: "5",
     name: "Paavni Khattri ",
-    designation: "Co-Convenor  of E-Summit'27",
+    designation: "Co-Convenor",
     vertical: "Overall Coordinators",
     image: "/team/PAAVNI KHATTRI.jpg",
     socials: {
@@ -89,9 +78,9 @@ export const TEAM_MEMBERS: TeamMember[] = [
     },
   },
   {
-    id: "7",
-    name: "Parshv Shah  of E-Summit'27",
-    designation: "Co-Convener of E-Summit'27",
+    id: "6",
+    name: "Parshv Shah",
+    designation: "Co-Convener",
     vertical: "Overall Coordinators",
     image: "/team/PARSHV SHAH.jpeg",
     socials: {
@@ -100,7 +89,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     },
   },
   {
-    id: "8",
+    id: "7",
     name: "Arnav Vinod Deshpande",
     designation: "Head of Startup Launchpad",
     vertical: "Design & Tech",
@@ -111,7 +100,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     },
   },
   {
-    id: "9",
+    id: "8",
     name: "Nikhil Rajput",
     designation: "Head of Startup Launchpad ",
     vertical: "Events & PR",
@@ -122,7 +111,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     },
   },
   {
-    id: "10",
+    id: "9",
     name: "Rohan Budaniya",
     designation: "Head of Startup Launchpad ",
     vertical: "Events & PR",
@@ -133,7 +122,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     },
   },
   {
-    id: "11",
+    id: "10",
     name: "Tavgun Kaur",
     designation: "Senior Manager - Startup Launchpad",
     vertical: "Corporate Relations",
@@ -144,7 +133,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     },
   },
   {
-    id: "12",
+    id: "11",
     name: "Divya Khasgiwal",
     designation: "Head of Zero to One",
     vertical: "Corporate Relations",
@@ -155,7 +144,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     },
   },
   {
-    id: "13",
+    id: "12",
     name: "Dev Kansal",
     designation: "Head of Zero to One",
     vertical: "Secretaries",
@@ -166,7 +155,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     },
   },
   {
-    id: "14",
+    id: "13",
     name: "Arjita Singh",
     designation: "Head of Zero to One",
     vertical: "Secretaries",
@@ -177,7 +166,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     },
   },
   {
-    id: "15",
+    id: "14",
     name: "Shagun Bhatia",
     designation: "Head of Zero to One - Design",
     vertical: "Secretaries",
@@ -188,7 +177,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     },
   },
   {
-    id: "16",
+    id: "15",
     name: "Sanvi Jain",
     designation: "Head of Tech",
     vertical: "Overall Coordinators",
@@ -199,7 +188,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     },
   },
   {
-    id: "17",
+    id: "16",
     name: "Mannat Gupta",
     designation: "Head of Tech",
     vertical: "Overall Coordinators",
@@ -210,7 +199,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     },
   },
   {
-    id: "18",
+    id: "17",
     name: "Zoya Shaikh",
     designation: "Head of Design",
     vertical: "Overall Coordinators",
@@ -221,7 +210,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     },
   },
   {
-    id: "19",
+    id: "18",
     name: "Krishna Verma",
     designation: "Head of Design",
     vertical: "Design & Tech",
@@ -232,7 +221,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     },
   },
   {
-    id: "20",
+    id: "19",
     name: "Jaykumar Tanna",
     designation: "Head of Events",
     vertical: "Design & Tech",
@@ -243,7 +232,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     },
   },
   {
-    id: "21",
+    id: "20",
     name: "Jasmine Sanghu",
     designation: "Head of Events",
     vertical: "Design & Tech",
@@ -254,7 +243,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     },
   },
   {
-    id: "22",
+    id: "21",
     name: "Hriday Toor",
     designation: "Sinior Manager-Events",
     vertical: "Events & PR",
@@ -265,7 +254,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     },
   },
   {
-    id: "23",
+    id: "22",
     name: "Abhinav Arora",
     designation: "Head of Marketing and Outreach",
     vertical: "Events & PR",
@@ -276,7 +265,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     },
   },
   {
-    id: "24",
+    id: "23",
     name: "Ved Parikh",
     designation: "Head of Marketing and Outreach",
     vertical: "Design & Tech",
@@ -287,7 +276,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     },
   },
   {
-    id: "25",
+    id: "24",
     name: "Mrityunjay Srivastava",
     designation: "Senior Manager-Marketing and Outreach",
     vertical: "Events & PR",
@@ -297,7 +286,17 @@ export const TEAM_MEMBERS: TeamMember[] = [
       email: "mailto:mrityunjay_s@ece.iitr.ac.in",
     },
   },
-
+  {
+    id: "25",
+    name: "Rajarshi Verma",
+    designation: "Core Member",
+    vertical: "Corporate Relations",
+    image: "/team/RAJARSHI VERMA.JPG",
+    socials: {
+      linkedin: "https://linkedin.com/in/rajarshi-verma",
+      email: "mailto:rajarshi_v@bt.iitr.ac.in",
+    },
+  },
   {
     id: "26",
     name: "Manasvi Sawaria",

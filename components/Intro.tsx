@@ -40,7 +40,7 @@ export default function Intro() {
                     </h1>
 
                     <p className="mt-8 font-manrope font-[400] text-[20px]/[29.5px] md:text-[17px] leading-[1.5] text-[#4B4B4B] max-w-[520px]">
-                        E-Cell IIT Roorkee is more than a student group it's a launchpad for world-class startups. We connect ambitious students with industry leaders, investors, and alumni to turn breakthrough ideas into thriving businesses.
+                        E-Cell IIT Roorkee is more than a student group it&apos;s a launchpad for world-class startups. We connect ambitious students with industry leaders, investors, and alumni to turn breakthrough ideas into thriving businesses.
                     </p>
 
                     {/* Stats */}

@@ -1,96 +1,180 @@
-import Link from "next/link";
+import React from "react";
+import Image from "next/image";
+import Group57Img from "./Group 57.png";
+import FacebookIcon from "./facebook (2).png";
+import TwitterIcon from "./Twitter.png";
+import InstagramIcon from "./Instagram.png";
+import LinkedinIcon from "./LinkedIN.png";
+import YoutubeIcon from "./Youtube.png";
 
 export default function Footer() {
-    return (
-        <footer id="Footer" className="w-full bg-[linear-gradient(90deg,#002575_0%,#011A7F_61%,#000209_100%)] text-white px-8 md:px-16 lg:px-[7%] pt-12 md:pt-14 pb-6">
-            <div className="w-full max-w-[1440px] mx-auto">
+  const exploreLinks = [
+    { label: "Home", href: "#" },
+    { label: "Initiatives", href: "#" },
+    { label: "About Us", href: "#" },
+    { label: "Team", href: "#" },
+    { label: "Contact Us", href: "#" },
+  ];
 
-                {/* Main Footer Content */}
-                <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8">
+  const socialLinks = [
+    {
+      id: "facebook",
+      href: "#",
+      iconSrc: FacebookIcon,
+    },
+    {
+      id: "twitter",
+      href: "#",
+      iconSrc: TwitterIcon,
+    },
+    {
+      id: "instagram",
+      href: "#",
+      iconSrc: InstagramIcon,
+    },
+    {
+      id: "linkedin",
+      href: "#",
+      iconSrc: LinkedinIcon,
+    },
+    {
+      id: "youtube",
+      href: "#",
+      iconSrc: YoutubeIcon,
+    },
+  ];
 
-                    {/* Brand + Description */}
-                    <div className="md:col-span-6 lg:col-span-6">
-                        <div className="flex items-center gap-3">
-                            <img src="/Logo_footer.svg" />
-                            {/* <div className="flex items-center justify-center w-9 h-9">
-                                <span className="text-[30px] leading-none font-bold text-[#00A8FF]">◆</span>
-                            </div>
-
-                            <div>
-                                <h2 className="font-manrope font-[600] text-[20px] leading-[20px]">E-Cell</h2>
-                                <p className="font-manrope text-[7px] tracking-[1px] leading-[10px]">IIT ROORKEE</p>
-                            </div> */}
-                        </div>
-
-                        <p className="mt-8 max-w-[430px] font-manrope font-[400] text-[16px]/[24px] leading-[20px] text-white/90">
-                            The Entrepreneurship Cell of IIT Roorkee is a student-run organisation dedicated to fostering entrepreneurship by empowering students with mentorship, consultancy, and networking opportunities with alumni, entrepreneurs, and investors.
-                        </p>
-
-                        {/* Address */}
-                        <div className="mt-8">
-                            <p className="font-manrope font-[500] text-[16px]/[24px] uppercase">Address</p>
-
-                            <p className="mt-4 font-manrope font-[400] text-[15px] leading-[18px] text-white/90">
-                                E-Cell Office, SAC Building
-                                <br />
-                                IIT Roorkee
-                                <br />
-                                Roorkee, Uttarakhand - 247667
-                            </p>
-                        </div>
-                    </div>
-
-                    {/* Explore */}
-                    <div className="md:col-span-3 lg:col-span-3">
-                        <h3 className="font-manrope font-[500] text-[16px]/[24px] uppercase">Explore</h3>
-
-                        <div className="mt-6 flex flex-col gap-4">
-                            <Link href="/" className="font-manrope text-[16px]/[24px] text-white/90 hover:text-white transition-colors">Home</Link>
-                            <Link href="/initiatives" className="font-manrope text-[16px]/[24px] text-white/90 hover:text-white transition-colors">Initiatives</Link>
-                            <Link href="/verticals" className="font-manrope text-[16px]/[24px] text-white/90 hover:text-white transition-colors">Verticals</Link>
-                            <Link href="/about" className="font-manrope text-[16px]/[24px] text-white/90 hover:text-white transition-colors">About Us</Link>
-                            <Link href="/team" className="font-manrope text-[16px]/[24px] text-white/90 hover:text-white transition-colors">Team</Link>
-                            <Link href="/#Contact" className="font-manrope text-[16px]/[24px] text-white/90 hover:text-white transition-colors">Contact Us</Link>
-                        </div>
-                    </div>
-
-                    {/* Contact */}
-                    <div className="md:col-span-3 lg:col-span-3 flex flex-col justify-between">
-                        <div>
-                            <h3 className="font-manrope font-[500] text-[16px]/[24px] uppercase">Contacts</h3>
-
-                            <div className="mt-6 flex flex-col gap-4">
-                                <a href="mailto:ecell@iitr.ac.in" className="font-manrope text-[16px]/[24px] text-white/90 hover:text-white transition-colors">ecell@iitr.ac.in</a>
-                                <a href="tel:+917222996098" className="font-manrope text-[16px]/[24px] text-white/90 hover:text-white transition-colors">+91 7222996098</a>
-                            </div>
-                        </div>
-
-                        {/* Social Icons */}
-                        <div className="mt-10 flex items-center gap-3 md:justify-end">
-                            <a href="#" aria-label="Facebook" className="w-[32px] h-auto rounded-full flex items-center justify-center text-[#061B80] font-bold text-[13px] hover:scale-105 transition-transform"><img src="/Facebook.svg"/></a>
-                            <a href="#" aria-label="Twitter" className="w-[32px] h-auto  rounded-full flex items-center justify-center text-[#061B80] font-bold text-[11px] hover:scale-105 transition-transform"><img src="/Twitter.svg"/></a>
-                            <a href="#" aria-label="Instagram" className="w-[32px] h-auto  rounded-ful flex items-center justify-center text-[#061B80] font-bold text-[11px] hover:scale-105 transition-transform"><img src="/Instagram.svg"/></a>
-                            <a href="#" aria-label="LinkedIn" className="w-[32px] h-auto rounded-full flex items-center justify-center text-[#061B80] font-bold text-[10px] hover:scale-105 transition-transform"><img src="/LinkedIN.svg"/></a>
-                            <a href="#" aria-label="YouTube" className="w-[32px] h-auto  rounded-full flex items-center justify-center text-[#061B80] font-bold text-[9px] hover:scale-105 transition-transform"><img src="/Youtube.svg"/></a>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Divider */}
-                <div className="w-full h-px bg-white/30 mt-12 md:mt-14"></div>
-
-                {/* Bottom Row */}
-                <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 pt-6">
-                    <p className="font-manrope text-[16px]/[24px] text-white/90">
-                        Made with ❤️ by Design & Tech Team
-                    </p>
-
-                    <p className="font-manrope text-[16px]/[24px] text-white/90">
-                        Terms of use/Privacy policy
-                    </p>
-                </div>
-
+  return (
+    <footer 
+      className="text-white pt-[60px] pb-[40px] px-4 md:px-[60px] min-h-[625px] flex flex-col justify-between items-center w-full"
+      style={{
+        background: "linear-gradient(rgba(1, 26, 127, 0.61), rgba(1, 26, 127, 0.61)), linear-gradient(90deg, #002575, #000209)"
+      }}
+    >
+      {/* Footer Content Wrapper - Max-width 1440px with a vertical gap of 48px */}
+      <div className="mx-auto max-w-[1440px] w-full flex flex-col gap-[48px]">
+        
+        {/* Top Grid Section */}
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 w-full">
+          {/* Brand/About Section (Left) */}
+          <div className="lg:col-span-6 flex flex-col gap-6">
+            <div className="relative w-[111.65px] h-[44px] flex items-center justify-start select-none">
+              <Image
+                src={Group57Img}
+                alt="E-Cell IIT Roorkee Logo"
+                width={111.65}
+                height={44}
+                style={{ width: "111.65px", height: "44px", objectFit: "contain", objectPosition: "left" }}
+                priority
+              />
             </div>
-        </footer>
-    );
+            <p className="text-[16px] leading-[24px] text-zinc-100/90 font-manrope max-w-[450px]">
+              The Entrepreneurship Cell of IIT Roorkee is a student-run organisation
+              dedicated to fostering entrepreneurship by empowering students with
+              mentorship, consultancy, and networking opportunities with alumni,
+              entrepreneurs, and investors.
+            </p>
+          </div>
+
+          {/* Quick Links Sections (Right) */}
+          <div className="lg:col-span-6 grid grid-cols-2 gap-8 md:pl-16">
+            {/* Explore column */}
+            <div className="flex flex-col gap-4">
+              <h3 className="font-manrope font-normal text-[16px] leading-[24px] tracking-normal text-white uppercase">
+                EXPLORE
+              </h3>
+              <ul className="flex flex-col gap-3 font-manrope text-[14px]">
+                {exploreLinks.map((link) => (
+                  <li key={link.label}>
+                    <a
+                      href={link.href}
+                      className="text-zinc-200 hover:text-white transition-colors duration-200"
+                    >
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Contacts column */}
+            <div className="flex flex-col gap-4">
+              <h3 className="font-manrope font-normal text-[16px] leading-[24px] tracking-normal text-white uppercase">
+                CONTACTS
+              </h3>
+              <ul className="flex flex-col gap-3 font-manrope text-[14px] text-zinc-200">
+                <li>
+                  <a
+                    href="mailto:ecell@iitr.ac.in"
+                    className="hover:text-white transition-colors"
+                  >
+                    ecell@iitr.ac.in
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="tel:+917222996098"
+                    className="hover:text-white transition-colors"
+                  >
+                    +917222996098
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Address and Social Media Row */}
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8">
+          {/* Address on Left */}
+          <div className="flex flex-col gap-2">
+            <h3 className="font-manrope font-medium text-[16px] leading-[24px] tracking-normal text-white uppercase">
+              ADDRESS
+            </h3>
+            <p className="text-[15px] leading-[24px] text-white font-manrope font-normal max-w-[548px] w-full">
+              E-Cell Office, SAC Building
+              <br />
+              IIT Roorkee
+              <br />
+              Roorkee, Uttarakhand - 247667
+            </p>
+          </div>
+
+          {/* Social Links on Right */}
+          <div className="flex items-center gap-[5px] self-start md:self-auto">
+            {socialLinks.map((social) => (
+              <a
+                key={social.id}
+                href={social.href}
+                className="flex h-11 w-11 items-center justify-center rounded-full hover:scale-105 transition-all duration-300 shadow-md"
+                aria-label={`Visit E-Cell IIT Roorkee on ${social.id}`}
+              >
+                <Image
+                  src={social.iconSrc}
+                  alt={`${social.id} logo`}
+                  width={22}
+                  height={22}
+                  style={{ width: "32px", height: "32.45px", objectFit: "contain" }}
+                />
+              </a>
+            ))}
+          </div>
+        </div>
+
+        {/* Divider and Bottom meta section */}
+        <div className="flex flex-col gap-6 w-full">
+          <div className="border-t-[1.5px] border-white/30 w-full" />
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-[16px] leading-[24px] text-white font-manrope font-normal">
+            <span>Made with ❤️ by Design & Tech Team</span>
+            <div>
+              <a href="#" className="hover:text-zinc-200 transition-colors">
+                Terms of use/Privacy policy
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+  );
 }
