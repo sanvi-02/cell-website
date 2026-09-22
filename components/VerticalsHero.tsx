@@ -120,26 +120,48 @@ export default function VerticalsHero() {
     }, []);
 
     return (
-        <section id="top" className="mx-auto max-w-[1180px] px-4 pb-20 pt-12 text-center sm:px-6 sm:pb-24 md:px-10 md:pt-20">
+        <section id="top"
+            className="mx-auto w-full max-w-[1440px] bg-white px-4 pb-20 pt-12 text-center sm:px-6 sm:pb-24 md:px-10 md:pt-16 lg:px-12 xl:px-16"
+        >
+
             <p className="mb-5 flex items-center justify-center gap-2 text-sm font-semibold uppercase leading-4 tracking-[1.2px] text-[#011A7F]">
                 <span aria-hidden="true">•</span>
                 Verticals
                 <span aria-hidden="true">•</span>
             </p>
-            <h1 className="mx-auto max-w-[632px] text-[clamp(28px,6vw,52px)] font-semibold leading-[1.08] tracking-[-.04em] text-[#0c287c] sm:text-5xl md:text-[52px]">
+            <h1 className="mx-auto max-w-[800px] text-[clamp(28px,4vw,58px)] font-semibold leading-[1.08] tracking-[-.04em] text-[#0c287c] sm:text-5xl md:text-[52px] lg:text-[56px] xl:text-[58px]">
                 Different strengths. One<br className="hidden sm:block" /> entrepreneurial ecosystem.
             </h1>
             <p className="mx-auto mt-5 max-w-[735px] text-xs leading-relaxed text-[#777b91] sm:text-sm">
                 E-Cell IIT Roorkee operates through six verticals, each contributing differently to building, creating, communicating and enabling entrepreneurship.
             </p>
 
-            <div className="relative mx-auto mt-16 flex min-h-[550px] max-w-[850px] items-center justify-center sm:min-h-[550px]">
-                <SideCard card={sideCards[0]} label="Ideas" className="left-0 top-[2%]" />
-                <SideCard card={sideCards[1]} label="Community" className="bottom-[8%] left-[-60px]" />
-                <SideCard card={sideCards[3]} label="Ventures" className="right-[-20px] top-[4%]" />
-                <SideCard card={sideCards[2]} label="Impact" className="bottom-[9%] right-4" />
+            <div className="relative mx-auto mt-16 flex min-h-[500px] w-full max-w-[1250px] items-center justify-center sm:min-h-[550px] lg:min-h-[600px] xl:min-h-[640px]">
+                <SideCard
+    card={sideCards[0]}
+    label="Ideas"
+    className="left-[20px] top-[2%] lg:left-[80px] xl:left-[140px]"
+/>
 
-                <div className="relative flex h-[420px] w-full max-w-[365px] items-end justify-center pt-16 sm:h-[420px]">
+<SideCard
+    card={sideCards[1]}
+    label="Community"
+    className="bottom-[8%] left-[0px] lg:left-[60px] xl:left-[120px]"
+/>
+
+<SideCard
+    card={sideCards[3]}
+    label="Ventures"
+    className="right-[20px] top-[4%] lg:right-[80px] xl:right-[140px]"
+/>
+
+<SideCard
+    card={sideCards[2]}
+    label="Impact"
+    className="bottom-[9%] right-[0px] lg:right-[60px] xl:right-[120px]"
+/>
+
+                <div className="relative flex h-[420px] w-full max-w-[365px] items-end justify-center pt-16 sm:h-[460px] sm:max-w-[390px] lg:h-[500px] lg:max-w-[430px] xl:h-[540px] xl:max-w-[460px]">
                     {order.map((cardIdx) => {
                         const isLeaving = cardIdx === leavingIndex;
                         const isEntering = cardIdx === enteringIndex;
@@ -163,7 +185,7 @@ export default function VerticalsHero() {
 
             <div
                 ref={pillContainerRef}
-                className="relative mx-auto flex max-w-[727px] flex-wrap justify-center gap-1 rounded-[16px] bg-white p-1.5 shadow-[0_8px_25px_rgba(30,49,130,.06)]"
+                className="relative mx-auto my-0 flex w-full max-w-[727px] flex-wrap justify-center gap-1 rounded-[16px] bg-white p-1.5 shadow-[0_8px_25px_rgba(30,49,130,.06)]"
             >
                 {pillStyle && (
                     <div
@@ -185,9 +207,8 @@ export default function VerticalsHero() {
                             buttonRefs.current[index] = el;
                         }}
                         onClick={() => showCard(index)}
-                        className={`relative z-10 rounded-[12px] px-4 py-2 text-[14px] font-medium transition-colors duration-300 md:px-5 ${
-                            pillTargetIndex === index ? "text-white" : "text-[#4b4f5f]"
-                        }`}
+                        className={`relative z-10 rounded-[12px] px-4 py-2 text-[14px] font-medium transition-colors duration-300 md:px-5 ${pillTargetIndex === index ? "text-white" : "text-[#4b4f5f]"
+                            }`}
                     >
                         {card.label}
                     </button>

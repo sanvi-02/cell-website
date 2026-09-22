@@ -1,20 +1,20 @@
 import Placeholder from "./Placeholder";
 
 export type Card = {
-  label: string;
-  title: string;
-  text: string;
-  type: "image" | "video";
-  src: string;
+    label: string;
+    title: string;
+    text: string;
+    type: "image" | "video";
+    src: string;
 };
 
 export const cards: Card[] = [
-    { label: "Zero to one", title: "Zero to One", text: "Building solutions and startups around real problems within and beyond the IIT Roorkee campus  from the first sketch to the first paying customer.", type: "image", src: "/verticals/021.jpeg" },
-    { label: "Startup Launchpad", title: "Startup Launchpad", text: "Working with external startups to give E-Cell members hands-on exposure to real-world startup execution.", type: "video", src: "/verticals/launchpad.mp4" },
+    { label: "Zero to one", title: "Zero to One", text: "Building solutions and startups around real problems within and beyond the IIT Roorkee campus  from the first sketch to the first paying customer.", type: "image", src: "/verticals/zerotoone_img.jpg" },
+    { label: "Startup Launchpad", title: "Startup Launchpad", text: "Working with external startups to give E-Cell members hands-on exposure to real-world startup execution.", type: "image", src: "/verticals/launchpad_img.jpg" },
     { label: "Events", title: "Events", text: "Creating entrepreneurship-focused experiences through E-Cell events and collaborations with clubs, companies and organizations.", type: "image", src: "/verticals/eventsnew.jpeg" },
-    { label: "Marketing", title: "Marketing & Outreach", text: "Creating engaging and educational content around entrepreneurship and E-Cell while expanding its reach.", type: "image", src: "/verticals/mno.jpeg" },
+    { label: "Marketing", title: "Marketing & Outreach", text: "Creating engaging and educational content around entrepreneurship and E-Cell while expanding its reach.", type: "image", src: "/verticals/marketing_img.jpg" },
     { label: "Design", title: "Design", text: "Building E-Cell's visual identity and creating design solutions across itsecosystem.", type: "video", src: "/verticals/design.mp4" },
-    { label: "Tech", title: "Tech", text: "Building websites, digital products and technical solutions for E-Cell and its verticals.", type: "video", src: "/verticals/tech.mp4" },
+    { label: "Tech", title: "Tech", text: "Building websites, digital products and technical solutions for E-Cell and its verticals.", type: "image", src: "/verticals/tech_img.jpg" },
 ];
 
 export default function StackCard({
@@ -70,8 +70,7 @@ export default function StackCard({
                 transform: `translateY(${translateY}px) scale(${scale})`,
                 opacity,
             }}
-            className={`absolute inset-x-0 top-0 mx-auto flex w-[92%] flex-col rounded-[14.77px] border border-white bg-white text-left shadow-[0_3.69px_22.25px_rgba(0,0,0,.07)] ${noTransition ? "" : "transition-all duration-500 ease-in-out"} ${!isFront && !isLeaving && !isJumping ? "cursor-pointer" : ""}`}
-        >
+            className={`absolute inset-x-0 top-0 mx-auto flex w-[92%] max-w-[360px] flex-col rounded-[14.77px] border border-white bg-white text-left shadow-[0_3.69px_22.25px_rgba(0,0,0,.07)] lg:max-w-[410px] xl:max-w-[440px] ${noTransition ? "" : "transition-all duration-500 ease-in-out"} ${!isFront && !isLeaving && !isJumping ? "cursor-pointer" : ""}`}        >
             <div
                 className="flex flex-col"
                 style={{
