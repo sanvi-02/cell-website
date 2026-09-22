@@ -13,10 +13,8 @@ export interface TeamMember {
 export const VERTICALS = [
   "All",
   "Secretaries",
-  "Overall Coordinators",
-  "Design & Tech",
-  "Events & PR",
-  "Corporate Relations",
+  "E-Summit'27",
+  "Heads",
 ] as const;
 
 export type VerticalType = (typeof VERTICALS)[number];
@@ -48,7 +46,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     id: "3",
     name: "Rajarshi Verma",
     designation: "Additional Secretary",
-    vertical: "Corporate Relations",
+    vertical: "Secretaries",
     image: "/team/RAJARSHI VERMA.JPG",
     socials: {
       linkedin: "https://linkedin.com/in/rajarshi-verma",
@@ -59,7 +57,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     id: "4",
     name: "Divyam Saini",
     designation: "Convenor of E-Summit'27",
-    vertical: "Secretaries",
+    vertical: "E-Summit'27",
     image: "/team/Divyam Saini.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/divyamsaini2712",
@@ -69,8 +67,8 @@ export const TEAM_MEMBERS: TeamMember[] = [
   {
     id: "5",
     name: "Vivek Singh",
-    designation: "Co-convenor  of E-Summit'27",
-    vertical: "Secretaries",
+    designation: "Co-convenor of E-Summit'27",
+    vertical: "E-Summit'27",
     image: "/team/VIVEK SINGH.webp",
     socials: {
       linkedin: "https://www.linkedin.com/in/vivek-singh-52243a2b6",
@@ -79,9 +77,9 @@ export const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     id: "6",
-    name: "Paavni Khattri ",
-    designation: "Co-Convenor  of E-Summit'27",
-    vertical: "Overall Coordinators",
+    name: "Paavni Khattri",
+    designation: "Co-Convenor of E-Summit'27",
+    vertical: "E-Summit'27",
     image: "/team/PAAVNI KHATTRI.jpg",
     socials: {
       linkedin: "https://www.linkedin.com/in/paavni-khattri-588374313/",
@@ -90,9 +88,9 @@ export const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     id: "7",
-    name: "Parshv Shah  of E-Summit'27",
+    name: "Parshv Shah",
     designation: "Co-Convener of E-Summit'27",
-    vertical: "Overall Coordinators",
+    vertical: "E-Summit'27",
     image: "/team/PARSHV SHAH.jpeg",
     socials: {
       linkedin: "https://www.linkedin.com/in/parshv-shah-2a2600333",
@@ -103,7 +101,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     id: "8",
     name: "Arnav Vinod Deshpande",
     designation: "Head of Startup Launchpad",
-    vertical: "Design & Tech",
+    vertical: "Heads",
     image: "/team/Arnav Deshpande.jpg",
     socials: {
       linkedin: "https://www.linkedin.com/in/arnav-deshpande-948890235",
@@ -113,9 +111,9 @@ export const TEAM_MEMBERS: TeamMember[] = [
   {
     id: "9",
     name: "Nikhil Rajput",
-    designation: "Head of Startup Launchpad ",
-    vertical: "Events & PR",
-    image: "/team/NIKHIL.jpg",
+    designation: "Head of Startup Launchpad",
+    vertical: "Heads",
+    image: "/team/NIKHIL10.jpg",
     socials: {
       linkedin: "https://www.linkedin.com/in/nikhil-rajput-b73aa0282?utm_source=share_via&utm_content=profile&utm_medium=member_android",
       email: "mailto:nikhil1@bt.iitr.ac.in",
@@ -124,8 +122,8 @@ export const TEAM_MEMBERS: TeamMember[] = [
   {
     id: "10",
     name: "Rohan Budaniya",
-    designation: "Head of Startup Launchpad ",
-    vertical: "Events & PR",
+    designation: "Head of Startup Launchpad",
+    vertical: "Heads",
     image: "/team/ROHAN BUDANIYA.jpg",
     socials: {
       linkedin: "https://www.linkedin.com/in/rohan-budaniya-0340a4314?utm_source=share_via&utm_content=profile&utm_medium=member_android",
@@ -136,7 +134,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     id: "11",
     name: "Tavgun Kaur",
     designation: "Senior Manager - Startup Launchpad",
-    vertical: "Corporate Relations",
+    vertical: "All",
     image: "/team/Tavgun Bakshi.jpeg",
     socials: {
       linkedin: "https://www.linkedin.com/in/tavgun-kaur-106b88342/",
@@ -147,7 +145,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     id: "12",
     name: "Divya Khasgiwal",
     designation: "Head of Zero to One",
-    vertical: "Corporate Relations",
+    vertical: "Heads",
     image: "/team/DIVYA AJAY KHASGIWAL.jpg",
     socials: {
       linkedin: "https://www.linkedin.com/in/divya-khasgiwal-a442aa311?utm_source=share_via&utm_content=profile&utm_medium=member_android",
@@ -158,7 +156,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     id: "13",
     name: "Dev Kansal",
     designation: "Head of Zero to One",
-    vertical: "Secretaries",
+    vertical: "Heads",
     image: "/team/DEV KANSAL.jpeg",
     socials: {
       linkedin: "https://www.linkedin.com/in/thedevkansal/",
@@ -169,7 +167,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     id: "14",
     name: "Arjita Singh",
     designation: "Head of Zero to One",
-    vertical: "Secretaries",
+    vertical: "Heads",
     image: "/team/Arjita Singh.jpg",
     socials: {
       linkedin: "https://linkedin.com",
@@ -180,8 +178,8 @@ export const TEAM_MEMBERS: TeamMember[] = [
     id: "15",
     name: "Shagun Bhatia",
     designation: "Head of Zero to One - Design",
-    vertical: "Secretaries",
-    image: "/team/SHAGUN BHATIA.jpg",
+    vertical: "Heads",
+    image: "/team/SHAGUN BHATIA09.jpg",
     socials: {
       linkedin: "https://www.linkedin.com/in/shagun-bhatia-807353314?utm_source=share_via&utm_content=profile&utm_medium=member_android",
       email: "mailto:shagun_b@mt.iitr.ac.in",
@@ -191,7 +189,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     id: "16",
     name: "Sanvi Jain",
     designation: "Head of Tech",
-    vertical: "Overall Coordinators",
+    vertical: "Heads",
     image: "/team/SANVI JAIN.jpeg",
     socials: {
       linkedin: "https://www.linkedin.com/in/sanvijain02/",
@@ -202,7 +200,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     id: "17",
     name: "Mannat Gupta",
     designation: "Head of Tech",
-    vertical: "Overall Coordinators",
+    vertical: "Heads",
     image: "/team/MANNAT GUPTA.jpg",
     socials: {
       linkedin: "https://linkedin.com",
@@ -213,7 +211,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     id: "18",
     name: "Zoya Shaikh",
     designation: "Head of Design",
-    vertical: "Overall Coordinators",
+    vertical: "Heads",
     image: "/team/ZOYA ASIF IQBAL SHAIKH.png",
     socials: {
       linkedin: "http://linkedin.com/in/zoyashaikh-iitr",
@@ -224,8 +222,8 @@ export const TEAM_MEMBERS: TeamMember[] = [
     id: "19",
     name: "Krishna Verma",
     designation: "Head of Design",
-    vertical: "Design & Tech",
-    image: "/team/KRISHNA VERMA.jpg",
+    vertical: "Heads",
+    image: "/team/KRISHNA VERMA08.jpg",
     socials: {
       linkedin: "https://www.linkedin.com/in/krishna-verma-b354a4346/",
       email: "mailto:krishna_v@ch.iitr.ac.in",
@@ -235,7 +233,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     id: "20",
     name: "Jaykumar Tanna",
     designation: "Head of Events",
-    vertical: "Design & Tech",
+    vertical: "Heads",
     image: "/team/Jaykumar Tanna.jpg",
     socials: {
       linkedin: "https://www.linkedin.com/in/jaykumar-tanna-54a9a3333?utm_source=share_via&utm_content=profile&utm_medium=member_android",
@@ -246,8 +244,8 @@ export const TEAM_MEMBERS: TeamMember[] = [
     id: "21",
     name: "Jasmine Sanghu",
     designation: "Head of Events",
-    vertical: "Design & Tech",
-    image: "/team/JASMINE SANGHU.jpeg",
+    vertical: "Heads",
+    image: "/team/JASMINE SANGHU11.jpeg",
     socials: {
       linkedin: "https://www.linkedin.com/in/jasmine-sanghu-136782333/",
       email: "mailto:jasmine_s@me.iitr.ac.in",
@@ -256,8 +254,8 @@ export const TEAM_MEMBERS: TeamMember[] = [
   {
     id: "22",
     name: "Hriday Toor",
-    designation: "Sinior Manager-Events",
-    vertical: "Events & PR",
+    designation: "Senior Manager-Events",
+    vertical: "All",
     image: "/team/HRIDAY TOOR.jpg",
     socials: {
       linkedin: "https://linkedin.com",
@@ -268,8 +266,8 @@ export const TEAM_MEMBERS: TeamMember[] = [
     id: "23",
     name: "Abhinav Arora",
     designation: "Head of Marketing and Outreach",
-    vertical: "Events & PR",
-    image: "/team/ABHINAV ARORA.jpeg",
+    vertical: "Heads",
+    image: "/team/ABHINAV ARORA12.jpeg",
     socials: {
       linkedin: "https://www.linkedin.com/in/abhinav-arora-120b02316/",
       email: "mailto:abhinav_a@bt.iitr.ac.in",
@@ -279,7 +277,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     id: "24",
     name: "Ved Parikh",
     designation: "Head of Marketing and Outreach",
-    vertical: "Design & Tech",
+    vertical: "Heads",
     image: "/team/PARIKH VED UMESHKUMAR.jpeg",
     socials: {
       linkedin: "https://www.linkedin.com/in/veduparikh?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -290,19 +288,18 @@ export const TEAM_MEMBERS: TeamMember[] = [
     id: "25",
     name: "Mrityunjay Srivastava",
     designation: "Senior Manager-Marketing and Outreach",
-    vertical: "Events & PR",
+    vertical: "All",
     image: "/team/MRITYUNJAY SRIVASTAVA.jpg",
     socials: {
       linkedin: "https://www.linkedin.com/in/mrityunjay-srivastava-25a017334?utm_source=share_via&utm_content=profile&utm_medium=member_android",
       email: "mailto:mrityunjay_s@ece.iitr.ac.in",
     },
   },
-
   {
     id: "26",
     name: "Manasvi Sawaria",
     designation: "Core Member",
-    vertical: "Corporate Relations",
+    vertical: "All",
     image: "/team/Manasvi Sawaria.jpeg",
     socials: {
       linkedin: "https://linkedin.com",
@@ -313,8 +310,8 @@ export const TEAM_MEMBERS: TeamMember[] = [
     id: "27",
     name: "Tejas Biradar",
     designation: "Core Member",
-    vertical: "Corporate Relations",
-    image: "/team/Tejas Biradar.jpg",
+    vertical: "All",
+    image: "/team/Tejas Biradar13.jpg",
     socials: {
       linkedin: "https://www.linkedin.com/in/krishna-verma-b354a4346/",
       email: "mailto:tejas_tb@ar.iitr.ac.in",
